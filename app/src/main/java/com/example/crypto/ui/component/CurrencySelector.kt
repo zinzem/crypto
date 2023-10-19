@@ -39,5 +39,6 @@ fun FiatSelector(selectedCurrency: Currency, onItemClick: (Currency) -> Unit, on
                 Modifier.padding(start = 32.dp, end = 32.dp, bottom = 16.dp)
             )
         }
+        WarningItem(Modifier.padding(start = 32.dp, end = 32.dp, bottom = 16.dp))
     }
 }

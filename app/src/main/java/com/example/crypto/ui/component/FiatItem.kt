@@ -42,9 +42,8 @@ fun FiatItem(
             .background(White)
             .clickable { onItemClick(currency) }
             .padding(16.dp),
-        verticalAlignment = Alignment.CenterVertically,
-
-        ) {
+        verticalAlignment = Alignment.CenterVertically
+    ) {
         Image(
             painter = painterResource(id = currency.icon),
             contentDescription = null,
@@ -57,7 +56,7 @@ fun FiatItem(
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.SpaceBetween
         ) {
-            Column() {
+            Column {
                 Text(
                     text = "${currency::class.simpleName}s",
                     style = MaterialTheme.typography.bodyMedium
@@ -68,7 +67,7 @@ fun FiatItem(
                     style = MaterialTheme.typography.bodySmall
                 )
             }
-            Column() {
+            Column {
                 Text(
                     text = "234.50",
                     style = MaterialTheme.typography.bodyMedium
